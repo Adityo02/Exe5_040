@@ -88,6 +88,10 @@ namespace Exe5_040
             else
                 return true;
         }
+        public void Displays()
+        {
+
+        }
     }
     internal class Program
     {
