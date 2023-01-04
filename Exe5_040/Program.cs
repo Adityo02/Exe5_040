@@ -21,7 +21,22 @@ namespace Exe5_040
             START = null;
         }
         public void addNote()
-        { }
+        {
+            int rollNo;
+            string ad;
+            Console.Write("\nEnter The Roll Number of The Student : ");
+            rollNo = Convert.ToInt32(Console.ReadLine());
+            Console.Write("\nEnter The Roll Name of The Student : ");
+            ad = Console.ReadLine();
+            Node newnode = new Node();
+            newnode.rollNumber = rollNo;
+            newnode.adityo = ad;
+
+            if (START == null || rollNo <= START.rollNumber)
+            {
+
+            }
+        }
     }
     internal class Program
     {
