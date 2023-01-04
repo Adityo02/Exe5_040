@@ -17,6 +17,10 @@ namespace Exe5_040
     {
         Node START;
         public List()
+        {
+            START = null;
+        }
+        public void addNote()
         { }
     }
     internal class Program
