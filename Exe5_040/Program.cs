@@ -34,7 +34,29 @@ namespace Exe5_040
 
             if (START == null || rollNo <= START.rollNumber)
             {
+                if((START != null) && (rollNo == START.rollNumber))
+                {
+                    Console.WriteLine();
+                    return;
+                }
+                newnode.arya = START;
+                START = newnode;
+                return;
+            }
 
+            Node previous, current;
+            previous = START;
+            current = START;
+
+            while ((current != null) && (rollNo == current.rollNumber))
+            {
+                if(rollNo == current.rollNumber)
+                {
+                    Console.WriteLine();
+                    return;
+                }
+                previous.arya = current;
+                previous.arya = newnode;
             }
         }
     }
