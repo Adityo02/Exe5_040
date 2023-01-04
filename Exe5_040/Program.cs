@@ -73,6 +73,21 @@ namespace Exe5_040
                 START = START.arya;
             return true;
         }
+
+        public bool Search(int rollNo, ref Node previous, ref Node current)
+        {
+            previous = START;
+            current = START;
+            while ((current != null) && (rollNo != current.rollNumber))
+            {
+                previous = current;
+                current = current.arya;
+            }
+            if (current == null)
+                return false;
+            else
+                return true;
+        }
     }
     internal class Program
     {
