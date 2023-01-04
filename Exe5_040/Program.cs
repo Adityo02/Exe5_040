@@ -112,10 +112,11 @@ namespace Exe5_040
                 return false;
         }
     }
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
+            List obj = new List();
         }
     }
 }
