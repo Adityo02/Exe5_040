@@ -128,6 +128,48 @@ namespace Exe5_040
                     Console.WriteLine("4. EXIT");
                     Console.Write("\nEnter Your Choice (1-4) : ");
                     char ch = Convert.ToChar(Console.ReadLine());
+                    switch(ch)
+                    {
+                        case '1':
+                            {
+                                obj.EnterNode();
+                            }
+                            break;
+
+                        case '2':
+                            {
+                                if(obj.listEmpty())
+                                {
+                                    Console.WriteLine("\nList is Empty");
+                                    break;
+                                }
+                                Console.WriteLine("Enter The Roll Number of" +
+                                    " The Student Whose Record is to be deleted: ");
+                                int rollNo = Convert.ToInt32(Console.ReadLine());
+                                Console.WriteLine();
+                                if (obj.DeleteNode(rollNo) == false)
+                                    Console.WriteLine("\nRecord Not Found.");
+                                else
+                                    Console.WriteLine("Record With Roll Number" +
+
+                                        +rollNo + "Deleted");
+                            }
+                            break;
+
+                        case '3':
+                            {
+                                obj.Displays();
+                            }
+                            break;
+
+                        case '4':
+                            return;
+                        default:
+                            {
+                                Console.WriteLine("Invalid Option");
+                                break;
+                            }
+                    }
                 }
                 catch(Exception)
                 {
