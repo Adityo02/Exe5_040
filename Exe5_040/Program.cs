@@ -121,13 +121,13 @@ namespace Exe5_040
             {
                 try
                 {
-                    Console.WriteLine("");
-                    Console.WriteLine("");
-                    Console.WriteLine("");
-                    Console.WriteLine("");
-                    Console.WriteLine("");
-                    Console.WriteLine("");
-                    Console.Write("");
+                    Console.WriteLine("\nMENU");
+                    Console.WriteLine("1. Enter a Record to The List");
+                    Console.WriteLine("2. Delete a Record From The List");
+                    Console.WriteLine("3. Displays all The Record in The List");
+                    Console.WriteLine("4. EXIT");
+                    Console.Write("\nEnter Your Choice (1-4) : ");
+                    char ch = Convert.ToChar(Console.ReadLine());
                 }
                 catch(Exception)
                 {
