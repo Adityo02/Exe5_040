@@ -90,7 +90,18 @@ namespace Exe5_040
         }
         public void Displays()
         {
-
+            if (listEmpty())
+                Console.WriteLine("\nThe Records in the List are : ");
+            else
+            {
+                Console.WriteLine("\nThe Records in The List are ; ");
+                Node currentNode;
+                for (currentNode = START; currentNode != null;
+                    currentNode = currentNode.arya)
+                    Console.Write(currentNode.rollNumber + " "
+                        + currentNode.adityo + "\n");
+                Console.WriteLine();
+            }
         }
 
         public bool listEmpty()
