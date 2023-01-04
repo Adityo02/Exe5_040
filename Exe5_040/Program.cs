@@ -20,7 +20,7 @@ namespace Exe5_040
         {
             START = null;
         }
-        public void addNote()
+        public void EnterNode()
         {
             int rollNo;
             string ad;
@@ -58,6 +58,20 @@ namespace Exe5_040
                 previous.arya = current;
                 previous.arya = newnode;
             }
+            newnode.arya = current;
+            previous.arya = newnode;
+        }
+
+        public bool DeleteNode(int rollNo)
+        {
+            Node previous, current;
+            previous = current = null;
+            if (Search(rollNo, ref previous, ref current) == false)
+                return false;
+            previous.arya = current.arya;
+            if (current == START)
+                START = START.arya;
+            return true;
         }
     }
     internal class Program
