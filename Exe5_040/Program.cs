@@ -119,7 +119,20 @@ namespace Exe5_040
             List obj = new List();
             while (true)
             {
-
+                try
+                {
+                    Console.WriteLine("");
+                    Console.WriteLine("");
+                    Console.WriteLine("");
+                    Console.WriteLine("");
+                    Console.WriteLine("");
+                    Console.WriteLine("");
+                    Console.Write("");
+                }
+                catch(Exception)
+                {
+                    Console.WriteLine("\nCheck for the Value Entered");
+                }
             }
         }
     }
